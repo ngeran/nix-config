@@ -1,0 +1,69 @@
+
+{ pkgs, lib, config, inputs, ... }:
+
+{
+   config = {
+	wayland.windowManager.hyprland = {
+   	  enable = true;
+
+	"$mod" = "SUPER";
+  plugins = [
+    inputs.hyprland-plugins.packages."${pkgs.system}".border-plus-plus
+  ];
+  settings = {
+
+       "$mod" = "SUPER";
+
+        bind = [
+ 	  # Programs
+	  "$mod, F, exec, firefox"
+	  "$mod, Q, exec, kitty"
+	];
+
+     };
+  };
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
