@@ -10,7 +10,6 @@
              ./features/cli
              ./features/desktop/hyprland
              ./features/desktop/waybar
-             ./features/desktop/rofi
           inputs.nix-colors.homeManagerModules.default
         ];
 

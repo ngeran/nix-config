@@ -1,14 +1,14 @@
-{
+{ pkgs, ... }:{
 
  programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
-   # theme = ./styles.css;
+    #theme = ./style.rasi;
 
     extraConfig = {
       modi = "drun,filebrowser";
       font = "Noto Sans CJK JP 12";
-      show-icons = true;
+      show-icons = false;
       disable-history = true;
       hover-select = true;
       bw = 0;
