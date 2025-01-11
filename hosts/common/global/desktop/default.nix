@@ -1,0 +1,33 @@
+{ pkgs, ... }: {
+  environment.systemPackages = with pkgs; [
+    vim
+    neovim
+    git
+    kitty
+    alacritty
+    fish
+    wget
+    unzip
+    firefox
+    rofi-wayland
+    wofi                                                                                                                                                    
+    ags                                                                                                                                                                               
+    openssh
+    hugo                                                                                                                                                                              
+    neofetch                                                                                                                                                                          
+    btop 
+    font-awesome                                                                                                                                                                            
+    xfce.thunar                                                                                                                                                                       
+    xfce.thunar-volman  
+    wl-clipboard 
+    grim
+    slurp
+    swappy                                                                                                                                                    
+    ags                                                                                                                                                                               
+    networkmanager-openvpn
+    openvpn 
+    pulseaudio
+    pavucontrol                                                                                                                                                                             
+    powertop  
+  ];                            
+}
